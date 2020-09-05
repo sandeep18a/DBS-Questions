@@ -1,4 +1,4 @@
-﻿//quest 2
+﻿/#quest 2
 def getPairs(p,diff):
     p.sort()
     print(p)
