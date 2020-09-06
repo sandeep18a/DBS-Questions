@@ -4,7 +4,6 @@ data=[("username1","phone_number1", "email1"),
  ("usernameY","phone_numberY", "emailX"),("usernameY","phone_numberP", "emailP"),("usernameQ","phone_numberQ", "emailQ")]
 
 def getsubindices(data):
- "Coverting the sub tuples into list"
     listdata=[]
     finalset=set()
     for each in data:
@@ -14,9 +13,9 @@ def getsubindices(data):
         for i in range(0,len(listdata)-1):
                 k=1
                 while k <len(listdata)-i:
-                "Comparing the element with the next element"
+                    #comparing the element with the next element
                     if(listdata[i + k][j] == listdata[i][j]):
-                      "using set to avoid duplicate elements"
+                        # adding to set to avoid duplicates
                         finalset.add(i)
                         finalset.add(i+k)
                         k=k+1
